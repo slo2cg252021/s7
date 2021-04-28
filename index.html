@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Dodatnia czy ujemna</title>
+	
+	<meta name="description" content="Opis w Google" />
+	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
+	
+	<style>
+			body
+			{
+				background-color: #222222;
+				font-size: 24px;
+				color: gray;
+			}
+		</style>
+	
+		<script type="text/javascript">
+	
+		function sprawdz()
+		{
+			var liczba = document.getElementById("pole").value;
+			
+			if (liczba>0) document.getElementById("wynik").innerHTML="dodatnia";
+			else if (liczba<0) document.getElementById("wynik").innerHTML="ujemna";
+			else if (liczba==0) document.getElementById("wynik").innerHTML="zero";
+		
+		}
+	
+	</script>
+	</head>
+	
+<body>
+
+	<center>	
+	<h1>Sprawdzanie czy liczba jest dodatnia czy ujemna</h1>
+	<h2>Menu</h2> 
+	<a href="#n1"> JS </a> </br>
+	<a href="#n2">Schemat blokowy </a> </br>
+	<a href="#n3"> Kod C++ </a> </br>
+	<a href="#n4"> Skrypt JS </a> </br>
+	<a href="#n5"> Phyton </a>
+	
+	<h2 id="n1">JS</h2>
+	<input type="text" id="pole" />
+	<input type="submit" value="Sprawdź" onclick="sprawdz()"/>
+	</br>
+	<div id="wynik"></div>
+	
+	
+	<h2 id="n2">Schemat blokowy</h2></br>
+	<img src="schemat.png">
+	
+	<h2 id="n3">Kod C++</h2>
+	
+	<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #557799">#include &lt;iostream&gt;</span>
+<span style="color: #008800; font-weight: bold">using</span> <span style="color: #008800; font-weight: bold">namespace</span> std;
+<span style="color: #333399; font-weight: bold">int</span> a;
+<span style="color: #333399; font-weight: bold">int</span> <span style="color: #0066BB; font-weight: bold">main</span> ()
+{
+    cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;podaj liczbe&quot;</span>;
+    cin <span style="color: #333333">&gt;&gt;</span> a;
+    <span style="color: #008800; font-weight: bold">if</span> (a<span style="color: #333333">&gt;</span><span style="color: #0000DD; font-weight: bold">0</span>){
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;dodatnia&quot;</span>;
+    }
+    <span style="color: #008800; font-weight: bold">else</span>
+    <span style="color: #008800; font-weight: bold">if</span> (a<span style="color: #333333">==</span><span style="color: #0000DD; font-weight: bold">0</span>)
+    {
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;zero&quot;</span>;
+    }
+    <span style="color: #008800; font-weight: bold">else</span>
+        cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;ujemna&quot;</span>;
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0000DD; font-weight: bold">0</span>;
+}
+</pre></td></tr></table></div>
+
+
+
+	<h2 id="n4">Skrypt JS</h2>
+	
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">function</span> sprawdz()
+{
+<span style="color: #008800; font-weight: bold">var</span> liczba <span style="color: #333333">=</span> <span style="color: #007020">document</span>.getElementById(<span style="background-color: #fff0f0">&quot;pole&quot;</span>).value;
+			
+<span style="color: #008800; font-weight: bold">if</span> (liczba<span style="color: #333333">&gt;</span><span style="color: #0000DD; font-weight: bold">0</span>) <span style="color: #007020">document</span>.getElementById(<span style="background-color: #fff0f0">&quot;wynik&quot;</span>).innerHTML<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;dodatnia&quot;</span>;
+<span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (liczba<span style="color: #333333">&lt;</span><span style="color: #0000DD; font-weight: bold">0</span>) <span style="color: #007020">document</span>.getElementById(<span style="background-color: #fff0f0">&quot;wynik&quot;</span>).innerHTML<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;ujemna&quot;</span>;
+<span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> (liczba<span style="color: #333333">==</span><span style="color: #0000DD; font-weight: bold">0</span>) <span style="color: #007020">document</span>.getElementById(<span style="background-color: #fff0f0">&quot;wynik&quot;</span>).innerHTML<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;zero&quot;</span>;
+		
+}
+</pre></td></tr></table></div>
+
+
+	<h2 id="n5"> Phyton </h2>
+	
+	<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td><pre style="margin: 0; line-height: 125%">zmienna <span style="color: #333333">=</span> <span style="color: #007020">raw_input</span>(<span style="background-color: #fff0f0">&#39;Podaj liczbę: &#39;</span>)
+zmienna <span style="color: #333333">=</span> <span style="color: #007020">int</span>(zmienna)
+<span style="color: #008800; font-weight: bold">if</span> zmienna <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span>:
+    <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&#39;dodatnia&#39;</span>)
+<span style="color: #008800; font-weight: bold">elif</span> zmienna <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span>:
+    <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&#39;zero&#39;</span>)
+<span style="color: #008800; font-weight: bold">else</span>:
+    <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&#39;ujemna&#39;</span>)
+</pre></td></tr></table></div>
+
+	
+</body>
